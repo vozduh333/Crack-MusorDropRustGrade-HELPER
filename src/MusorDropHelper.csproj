@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>MusorDropHelper</AssemblyName>
+    <UseWindowsForms>true</UseWindowsForms>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace>MusorDropHelper</RootNamespace>
+    <NoWarn>CS0162;CS8632;CS0649;CS0169;CS0414;NU1701</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="MusorDropHelper.favicon.ico" />
+    <EmbeddedResource Include="MusorDropHelper.favicon.ico" LogicalName="MusorDropHelper.favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="BouncyCastle.Cryptography" Version="2.7.0" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2903.40" />
+  </ItemGroup>
+</Project>
